@@ -10,3 +10,37 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Custom Scrollbar - Dusty Rose Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(212, 165, 165, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #FFD5CD 0%, #D4A5A5 50%, #9B7E8C 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #D4A5A5 0%, #9B7E8C 50%, #6B4C5C 100%);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*:focus-visible {
+  outline: 2px solid #D4A5A5;
+  outline-offset: 2px;
+}
